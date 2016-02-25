@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM 
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+	    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://127.0.0.1:3306</property>
+		<property name="hibernate.default_schema">test</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">challa</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="connection.autocommit">true</property>
+		<mapping resource="conf/debitcard.hbm.xml" />
+		<mapping resource="conf/creditcard.hbm.xml" />
+		<mapping resource="conf/accountsummary.hbm.xml" />
+	</session-factory>
+</hibernate-configuration>

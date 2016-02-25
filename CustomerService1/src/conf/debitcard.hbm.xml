@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+ 
+<hibernate-mapping>
+   <class name="com.customerexpress.model.DebitCardModel" table="customerexpress">
+      <id name="accountId" type="integer" column="account_id">
+				<generator class="increment"/>
+      </id>
+      <property name="issueType" column="issue_type" type="string"/>
+      <property name="issueDesc" column="issue_desc" type="string"/>
+    </class>
+</hibernate-mapping>

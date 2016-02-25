@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+ 
+<hibernate-mapping>
+   <class name="com.customerexpress.model.AccountSummaryModel" table="accountsummarydetails">
+      <id name="accountNumber" type="integer" column="account_number">
+				<generator class="increment"/>
+      </id>
+      <property name="accountType" column="account_type" type="string"/>
+      <property name="balance" column="balance" type="integer"/>
+    </class>
+</hibernate-mapping>
